@@ -1,5 +1,6 @@
 # Ignoruj plik z kluczem API
 /sys/api_key.json
+/sys/.htaccess
 
 # Ignoruj pliki systemowe
 .DS_Store
