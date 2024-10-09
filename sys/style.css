@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Lato:wght@400&family=Lora:wght@600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	background-color: #181818;
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+body {
+	min-height: 100vh;
+	min-width: 600px;
+	font-family: "Lato", serif;
+	font-weight: 400;
+	font-style: normal;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header {
+	background-color: #121212;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4px 8px;
+	width: 100%;
+}
+
+h1,
+h2 {
+	font-family: 'Lora', serif;
+	text-align: center;
+	text-transform: capitalize;
+	font-variant: small-caps;
+}
+
+h2 {
+	border-bottom: 0.1rem solid #fff;
+}
+
+footer {
+	background-color: #121212;
+	text-align: center;
+	line-height: 1.5;
+	padding: 2px 4px;
+	width: 100%;
+}
+
+main {
+	background-color: #121212;
+	border-radius: 1rem;
+	width: 100%;
+	position: relative;
+}
+
+form>div:last-child {
+	text-align: center;
+	border-top: 0.1rem solid #fff;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	margin: 1% 10%;
+	align-items: center;
+}
+
+.row>div,
+.row>input,
+.row>label,
+.row>select {
+	width: 50%;
+	padding: 1%;
+}
+
+.settings {
+	max-width: 900px;
+}
+
+.station {
+	overflow: hidden;
+	border: 0.2rem solid #ff9;
+	max-width: 1200px;
+	margin: auto;
+	width: 90%;
+}
+
+.clock {
+	background-color: #121212;
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	font-size: xx-large;
+}
+
+#weather-img {
+	border-bottom: 0.1rem solid #ff9;
+	border-right: 0.1rem solid #ff9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 4%;
+}
+
+#weather-img>img {
+	height: 12rem;
+}
+
+#weather-img>span {
+	font-family: "VT323", monospace;
+	text-align: center;
+	font-size: 2rem;
+}
+
+#date-time {
+	font-family: "VT323", monospace;
+	border-bottom: 0.1rem solid #ff9;
+	border-left: 0.1rem solid #ff9;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 4%;
+	text-align: center;
+}
+
+#date-time>.time {
+	font-size: 4rem;
+}
+
+#date-time>.date {
+	font-size: 2.5rem;
+}
+
+#weather-temp {
+	font-family: "VT323", monospace;
+	font-size: 2.5rem;
+	border-top: 0.1rem solid #ff9;
+	border-right: 0.1rem solid #ff9;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+	gap: 25px;
+	padding: 2%;
+}
+
+
+#weather-ext {
+	font-family: "VT323", monospace;
+	border-top: 0.1rem solid #ff9;
+	border-left: 0.1rem solid #ff9;
+	padding: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 25px;
+	font-size: 1.8rem;
+}
+
+#weather-ext>div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	margin: 2%;
+}
+
+.icon {
+	height: 1.2rem;
+	filter: invert(100%);
+	position: absolute;
+	top: 8px;
+	left: 8px;
+}
+
+.weather-icon {
+	height: 1.75rem;
+	filter: invert(100%);
+}
+
+input[type="submit"] {
+	text-transform: capitalize;
+	font-variant: small-caps;
+}
+
+input[type="radio"] {
+	margin-left: 2%;
+	width: 0.7rem;
+	height: 0.7rem;
+}
+
+input[type='radio']:before {
+	content: '';
+	display: block;
+	width: 0.4rem;
+	height: 0.4rem;
+	margin: 20% auto;
+	border-radius: 50%;
+}
+
+input[type='radio']:checked:before {
+	background: #0276FF;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+	height: 2rem;
+	vertical-align: text-bottom;
+	border-radius: 5px;
+	border: 1px solid #555;
+}
+
+input[type="text"]:focus,
+input[type="number"],
+select {
+	outline-color: #0276FF;
+}
+
+input[type="text"],
+input[type="number"] {
+	padding: 1%;
+}
+
+select {
+	padding: 0 1%;
+}
+
+.button {
+	appearance: button;
+	background-color: #0276FF;
+	border-radius: 10px;
+	border-style: none;
+	box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+	box-sizing: border-box;
+	color: #fff;
+	cursor: pointer;
+	font-size: 80%;
+	line-height: 1;
+	padding: 10px 20px;
+	margin: 2% 1%;
+	text-align: center;
+	transition: color .13s ease-in-out, background .13s ease-in-out, opacity .13s ease-in-out, box-shadow .13s ease-in-out;
+	touch-action: manipulation;
+	user-select: none;
+}
+
+.button:active {
+	background-color: #006AE8;
+}
+
+.button:hover {
+	background-color: #1C84FF;
+}
+
+.formContent>.message {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.error {
+	padding: 10px;
+	background-color: crimson;
+}
+
+[data-info] {
+	position: relative;
+}
+
+[data-info]:hover::after {
+	font-family: "Lato", serif;
+	font-size: 0.8rem;
+	content: attr(data-info);
+	background: #ddd;
+	color: #000;
+	padding: 2px 5px;
+	border-radius: 5px;
+	position: absolute;
+	top: -25px;
+	left: 0;
+}

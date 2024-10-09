@@ -1,0 +1,16 @@
+{
+    "dateTime": {
+        "hours": "1",
+        "shortYear": "0",
+        "dateFormat": "mm-dd-rrrr",
+        "dateSeparator": "-"
+    },
+    "weather": {
+        "units": "metric",
+        "lang": "pl"
+    },
+    "geolocation": {
+        "lon": "19.9278",
+        "lat": "50.0509"
+    }
+}

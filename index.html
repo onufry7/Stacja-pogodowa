@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang="pl-PL">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Stacja Pogodowa">
+	<meta name="keywords" content="Stacja Pogodowa, Szymon Burnejko">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+
+	<link rel="stylesheet" href="sys/style.css">
+	<script src="sys/scripts.js"></script>
+
+	<title>Stacja Pogodowa</title>
+</head>
+
+<body>
+
+	<header>
+		<h1>Symulator stacji pogodowej</h1>
+	</header>
+
+	<div id="error"></div>
+
+	<main class="station">
+
+		<a href="settings.php"><img src="sys/icons/settings.png" alt="settings" class="icon"></a>
+
+		<div class="clock">
+
+			<div id="weather-img">
+				<img src="sys/icons/weather.png" alt="weather icon">
+				<span>Weather description</span>
+			</div>
+
+			<div id="date-time">
+				<div class="time">00:00:00</div>
+				<div class="date">00.00.0000</div>
+			</div>
+
+			<div id="weather-temp">
+
+				<div class="temp" data-info="Temperatura">
+					<img src="sys/icons/temp.png" alt="Temp" class="weather-icon">
+					<span>- &deg;C</span>
+				</div>
+
+				<div class="feels-like" data-info="Temperatura odczuwalna">
+					<img src="sys/icons/temp-feel.png" alt="Temp feel" class="weather-icon">
+					<span>- &deg;C</span>
+				</div>
+
+			</div>
+
+			<div id="weather-ext">
+
+				<div class="rain" data-info="Opady deszczu">
+					<img src="sys/icons/rain.png" alt="Rain" class="weather-icon">
+					<span>-.- mm/h</span>
+				</div>
+
+				<div class="snow" data-info="Opady śniegu">
+					<img src="sys/icons/snow.png" alt="Snow" class="weather-icon">
+					<span>-.- mm/h</span>
+				</div>
+
+				<div class="wind-speed" data-info="Wiatr">
+					<img src="sys/icons/wind.png" alt="Wind" class="weather-icon">
+					<span>- km/h</span>
+				</div>
+
+				<div class="humidity" data-info="Wilgotność">
+					<img src="sys/icons/humidity.png" alt="Humidity" class="weather-icon">
+					<span>-%</span>
+				</div>
+
+				<div class="clouds" data-info="Zachmurzenie">
+					<img src="sys/icons/cloudy.png" alt="Cloudy" class="weather-icon">
+					<span>-%</span>
+				</div>
+
+			</div>
+
+		</div>
+
+	</main>
+
+	<footer>Dane pogodowe dostarczane przez: <a href="https://openweathermap.org"> OpenWeather </a> </footer>
+
+</body>
+
+</html>

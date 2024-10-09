@@ -1,0 +1,6 @@
+# Ignoruj plik z kluczem API
+/sys/api_key.json
+
+# Ignoruj pliki systemowe
+.DS_Store
+Thumbs.db
